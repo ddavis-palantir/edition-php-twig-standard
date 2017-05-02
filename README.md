@@ -1,18 +1,17 @@
-![license](https://img.shields.io/github/license/pattern-lab/edition-php-twig-standard.svg)
-[![Packagist](https://img.shields.io/packagist/v/pattern-lab/edition-twig-standard.svg)](https://packagist.org/packages/pattern-lab/edition-mustache-webdesignday) [![Gitter](https://img.shields.io/gitter/room/pattern-lab/php.svg)](https://gitter.im/pattern-lab/php)
-
 # Pattern Lab Standard Edition for Twig
 
 The Standard Edition for Twig gives developers and designers a clean and stable base from which to develop a Twig-based pattern library.
+
+> **ATTENTION**: This is [a fork of the original](https://github.com/pattern-lab/edition-php-twig-standard) by the [Drupal Pattern Lab GitHub Org](https://github.com/drupal-pattern-lab), as are all dependencies. See [our reasons for forking](https://drupal-pattern-lab.github.io/faqs/#why-fork-pattern-lab) - it's out of love for Pattern Lab.
 
 ## Packaged Components
 
 The Standard Edition for Twig comes with the following components:
 
-* `pattern-lab/core`: [GitHub](https://github.com/pattern-lab/patternlab-php-core), [Packagist](https://packagist.org/packages/pattern-lab/core)
-* `pattern-lab/patternengine-twig`: [documentation](https://github.com/pattern-lab/patternengine-php-twig#twig-patternengine-for-pattern-lab-php), [GitHub](https://github.com/pattern-lab/patternengine-php-twig), [Packagist](https://packagist.org/packages/pattern-lab/patternengine-twig)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-assets-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/pattern-lab/styleguidekit-twig-default), [Packagist](https://packagist.org/packages/pattern-lab/styleguidekit-twig-default)
+* `pattern-lab/core`: [GitHub](https://github.com/drupal-pattern-lab/patternlab-php-core)
+* `pattern-lab/patternengine-twig`: [GitHub](https://github.com/drupal-pattern-lab/patternengine-php-twig)
+* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-assets-default)
+* `pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-twig-default)
 
 ## Installing
 
@@ -23,7 +22,7 @@ There are two methods for downloading and installing the Standard Edition for Tw
 
 ### Download a pre-built project
 
-The fastest way to get started with the Standard Edition for Twig is to [download the pre-built version](https://github.com/pattern-lab/edition-php-twig-standard/releases) from the [releases page](https://github.com/pattern-lab/edition-php-twig-standard/releases). The pre-built project comes with the [Base StarterKit for Twig](https://github.com/pattern-lab/starterkit-twig-base) installed by default.
+The fastest way to get started with the Standard Edition for Twig is to [download the pre-built version](https://github.com/drupal-pattern-lab/edition-php-twig-standard/releases) from the [releases page](https://github.com/drupal-pattern-lab/edition-php-twig-standard/releases). The pre-built project comes with the [Base StarterKit for Twig](https://github.com/drupal-pattern-lab/starterkit-twig-base) installed by default.
 
 **Please note:** Pattern Lab uses [Composer](https://getcomposer.org/) to manage project dependencies. To upgrade the Standard Edition for Twig or to install plug-ins you'll need to [install Composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx). We recommend that you [install it globally](https://getcomposer.org/doc/00-intro.md#globally).
 
