@@ -34,6 +34,10 @@
     },
     {
       "type": "vcs",
+      "url": "https://github.com/drupal-pattern-lab/styleguidekit-assets-default"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/drupal-pattern-lab/styleguidekit-twig-default"
     }
   ],
@@ -41,6 +45,7 @@
 		"php": ">=5.4",
 		"pattern-lab/core": "^2.0.0",
 		"pattern-lab/patternengine-twig": "^2.0.0",
+		"pattern-lab/styleguidekit-assets-default": "^3.0.0",
 		"pattern-lab/styleguidekit-twig-default": "^3.0.0"
 	},
 	"scripts": {
