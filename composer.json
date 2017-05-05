@@ -1,8 +1,8 @@
 {
-	"name":             "pattern-lab/edition-twig-standard",
+	"name":             "drupal-pattern-lab/edition-twig-standard",
 	"description":      "Standard Edition of Pattern Lab for Twig. Installs all Twig-related assets except for a StarterKit.",
 	"keywords":         ["pattern lab"],
-	"homepage":         "http://patternlab.io",
+	"homepage":         "http://drupal-pattern-lab.github.io",
 	"license":          "MIT",
 	"type":             "project",
 	"authors": [
@@ -14,9 +14,8 @@
 		}
 	],
 	"support": {
-		"issues":         "https://github.com/pattern-lab/patternlab-php/issues",
-		"wiki":           "http://patternlab.io/docs/",
-		"source":         "https://github.com/pattern-lab/patternlab-php/releases"
+		"issues":         "https://github.com/drupal-pattern-lab/edition-php-twig-standard/issues",
+		"source":         "https://github.com/drupalpattern-lab/edition-php-twig-standard/releases"
 	},
 	"autoload": {
 		"psr-0": {
