@@ -39,7 +39,7 @@ Please follow the directions for [installing Composer](https://getcomposer.org/d
 Use Composer's [`create-project` command](https://getcomposer.org/doc/03-cli.md#create-project) to install the Standard Edition for Twig into a location of your choosing. In Terminal type:
 
     cd install/location/
-    composer create-project --repository '{ "type": "vcs", "url": "https://github.com/drupal-pattern-lab/edition-php-twig-standard" }' pattern-lab/edition-twig-standard your-project-name && cd $_
+    composer require drupal-pattern-lab/edition-twig-standard your-project-name && cd $_
 
 This will install the Standard Edition for Twig into a directory called `your-project-name` in `install/location/`. During the set-up process you will be asked to install an appropriate StarterKit. You will be automatically dropped into the project directory after the process is finished.
 
