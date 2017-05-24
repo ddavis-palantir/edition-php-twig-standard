@@ -8,10 +8,10 @@ The Standard Edition for Twig gives developers and designers a clean and stable 
 
 The Standard Edition for Twig comes with the following components:
 
-* `pattern-lab/core`: [GitHub](https://github.com/drupal-pattern-lab/patternlab-php-core)
-* `pattern-lab/patternengine-twig`: [GitHub](https://github.com/drupal-pattern-lab/patternengine-php-twig)
-* `pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-assets-default)
-* `pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-twig-default)
+* `drupal-pattern-lab/core`: [GitHub](https://github.com/drupal-pattern-lab/patternlab-php-core)
+* `drupal-pattern-lab/patternengine-twig`: [GitHub](https://github.com/drupal-pattern-lab/patternengine-php-twig)
+* `drupal-pattern-lab/styleguidekit-assets-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-assets-default)
+* `drupal-pattern-lab/styleguidekit-twig-default`: [GitHub](https://github.com/drupal-pattern-lab/styleguidekit-twig-default)
 
 ## Installing
 
