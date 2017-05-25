@@ -15,7 +15,7 @@
 	],
 	"support": {
 		"issues":         "https://github.com/drupal-pattern-lab/edition-php-twig-standard/issues",
-		"source":         "https://github.com/drupalpattern-lab/edition-php-twig-standard/releases"
+		"source":         "https://github.com/drupal-pattern-lab/edition-php-twig-standard/releases"
 	},
 	"autoload": {
 		"psr-0": {
