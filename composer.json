@@ -15,19 +15,37 @@
 	],
 	"support": {
 		"issues":         "https://github.com/drupal-pattern-lab/edition-php-twig-standard/issues",
-		"source":         "https://github.com/drupal-pattern-lab/edition-php-twig-standard/releases"
+		"source":         "https://github.com/drupalpattern-lab/edition-php-twig-standard/releases"
 	},
 	"autoload": {
 		"psr-0": {
 			"PatternLab":   "core/src/"
 		}
 	},
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/drupal-pattern-lab/patternlab-php-core"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/drupal-pattern-lab/patternengine-php-twig"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/drupal-pattern-lab/styleguidekit-assets-default"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/drupal-pattern-lab/styleguidekit-twig-default"
+    }
+  ],
 	"require": {
 		"php": ">=5.4",
-		"drupal-pattern-lab/core": "^2.0.0",
-		"drupal-pattern-lab/patternengine-twig": "^2.0.0",
-		"drupal-pattern-lab/styleguidekit-assets-default": "^3.0.0",
-		"drupal-pattern-lab/styleguidekit-twig-default": "^3.0.0"
+		"pattern-lab/core": "^2.0.0",
+		"pattern-lab/patternengine-twig": "^2.0.0",
+		"pattern-lab/styleguidekit-assets-default": "^3.0.0",
+		"pattern-lab/styleguidekit-twig-default": "^3.0.0"
 	},
 	"scripts": {
 		"post-install-cmd": [
