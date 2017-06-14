@@ -74,7 +74,10 @@
 			"starterKitSuggestions": [
 				"drupal-pattern-lab/starterkit-twig-demo",
 				"drupal-pattern-lab/starterkit-twig-base"
-			]
+			],
+      "config": {
+        "overrideConfig": false
+      }
 		}
 	}
 }
