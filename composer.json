@@ -84,6 +84,9 @@
 		"patches": {
 			"twig/twig": {
 				"Resolving issue with no return type specified in twig/twig": "patches/test_patch.2.patch"
+			},
+			"symfony/finder": {
+				"Resolving issue with symfony/finder": "patches/test_patch.3.patch"
 			}
 		}
 	},

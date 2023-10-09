@@ -1,0 +1,70 @@
+diff --git a/finder/Tests/Iterator/FileTypeFilterIteratorTest.php b/finder/Tests/Iterator/FileTypeFilterIteratorTest.php
+index fe03b43..9d2a4e6 100644
+--- a/finder/Tests/Iterator/FileTypeFilterIteratorTest.php
++++ b/finder/Tests/Iterator/FileTypeFilterIteratorTest.php
+@@ -56,7 +56,7 @@ class FileTypeFilterIteratorTest extends RealIteratorTestCase
+ 
+ class InnerTypeIterator extends \ArrayIterator
+ {
+-    public function current()
++    public function current(): mixed
+     {
+         return new \SplFileInfo(parent::current());
+     }
+diff --git a/finder/Tests/Iterator/FilenameFilterIteratorTest.php b/finder/Tests/Iterator/FilenameFilterIteratorTest.php
+index 9270dd1..cd62240 100644
+--- a/finder/Tests/Iterator/FilenameFilterIteratorTest.php
++++ b/finder/Tests/Iterator/FilenameFilterIteratorTest.php
+@@ -42,7 +42,7 @@ class FilenameFilterIteratorTest extends IteratorTestCase
+ 
+ class InnerNameIterator extends \ArrayIterator
+ {
+-    public function current()
++    public function current(): mixed
+     {
+         return new \SplFileInfo(parent::current());
+     }
+diff --git a/finder/Tests/Iterator/MockSplFileInfo.php b/finder/Tests/Iterator/MockSplFileInfo.php
+index 58bb597..428351e 100644
+--- a/finder/Tests/Iterator/MockSplFileInfo.php
++++ b/finder/Tests/Iterator/MockSplFileInfo.php
+@@ -48,7 +48,7 @@ class MockSplFileInfo extends \SplFileInfo
+         }
+     }
+ 
+-    public function isFile()
++    public function isFile(): bool
+     {
+         if (null === $this->type) {
+             return false !== strpos($this->getFilename(), 'file');
+@@ -57,7 +57,7 @@ class MockSplFileInfo extends \SplFileInfo
+         return self::TYPE_FILE === $this->type;
+     }
+ 
+-    public function isDir()
++    public function isDir(): bool
+     {
+         if (null === $this->type) {
+             return false !== strpos($this->getFilename(), 'directory');
+@@ -66,7 +66,7 @@ class MockSplFileInfo extends \SplFileInfo
+         return self::TYPE_DIRECTORY === $this->type;
+     }
+ 
+-    public function isReadable()
++    public function isReadable(): bool
+     {
+         if (null === $this->mode) {
+             return preg_match('/r\+/', $this->getFilename());
+diff --git a/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php b/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php
+index b1e431b..fba52c2 100644
+--- a/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php
++++ b/finder/Tests/Iterator/SizeRangeFilterIteratorTest.php
+@@ -47,7 +47,7 @@ class SizeRangeFilterIteratorTest extends RealIteratorTestCase
+ 
+ class InnerSizeIterator extends \ArrayIterator
+ {
+-    public function current()
++    public function current(): mixed
+     {
+         return new \SplFileInfo(parent::current());
+     }
