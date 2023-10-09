@@ -45,7 +45,8 @@
 		"pattern-lab/core": "^2.0.0",
 		"pattern-lab/patternengine-twig": "^2.0.0",
 		"pattern-lab/styleguidekit-assets-default": "^3.0.0",
-		"pattern-lab/styleguidekit-twig-default": "^3.0.0"
+		"pattern-lab/styleguidekit-twig-default": "^3.0.0",
+		"cweagans/composer-patches": "^1.7"
 	},
 	"scripts": {
 		"post-install-cmd": [
@@ -78,6 +79,17 @@
       "config": {
         "overrideConfig": false
       }
+		},
+		"composer-exit-on-patch-failure": true,
+		"patches": {
+			"twig/twig": {
+				"Resolving issue with no return type specified in twig/twig": "patches/test_patch.2.patch"
+			}
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"cweagans/composer-patches": true
 		}
 	}
 }

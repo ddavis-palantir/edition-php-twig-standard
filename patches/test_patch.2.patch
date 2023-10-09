@@ -1,0 +1,19 @@
+diff --git a/src/Util/TemplateDirIterator.php b/src/Util/TemplateDirIterator.old.php
+index a8abd29..1ab0dac 100644
+--- a/src/Util/TemplateDirIterator.php
++++ b/src/Util/TemplateDirIterator.old.php
+@@ -16,12 +16,12 @@ namespace Twig\Util;
+  */
+ class TemplateDirIterator extends \IteratorIterator
+ {
+-    public function current(): mixed
++    public function current()
+     {
+         return file_get_contents(parent::current());
+     }
+ 
+-    public function key(): mixed
++    public function key()
+     {
+         return (string) parent::key();
+     }
