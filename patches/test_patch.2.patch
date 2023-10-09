@@ -1,4 +1,4 @@
-diff --git a/src/Util/TemplateDirIterator.php b/src/Util/TemplateDirIterator.old.php
+diff --git a/src/Util/TemplateDirIterator.php b/src/Util/TemplateDirIterator.php
 index a8abd29..1ab0dac 100644
 --- a/src/Util/TemplateDirIterator.php
 +++ b/src/Util/TemplateDirIterator.php
