@@ -1,0 +1,42 @@
+diff --git a/finder/Iterator/FilterIterator.php b/finder/Iterator.b/FilterIterator.php
+index c16dd8f..f41e0fc 100644
+--- a/finder/Iterator/FilterIterator.php
++++ b/finder/Iterator.b/FilterIterator.php
+@@ -29,7 +29,7 @@ abstract class FilterIterator extends \FilterIterator
+      *
+      * @see FilterIterator::rewind()
+      */
+-    public function rewind()
++    public function rewind(): void
+     {
+         if (\PHP_VERSION_ID > 50607 || (\PHP_VERSION_ID > 50523 && \PHP_VERSION_ID < 50600)) {
+             parent::rewind();
+diff --git a/finder/Iterator/RecursiveDirectoryIterator.php b/finder/Iterator.b/RecursiveDirectoryIterator.php
+index 63764d4..c2992a4 100644
+--- a/finder/Iterator/RecursiveDirectoryIterator.php
++++ b/finder/Iterator.b/RecursiveDirectoryIterator.php
+@@ -62,6 +62,7 @@ class RecursiveDirectoryIterator extends \RecursiveDirectoryIterator
+      *
+      * @return SplFileInfo File information
+      */
++    #[\ReturnTypeWillChange]
+     public function current()
+     {
+         // the logic here avoids redoing the same work in all iterations
+@@ -86,6 +87,7 @@ class RecursiveDirectoryIterator extends \RecursiveDirectoryIterator
+      *
+      * @throws AccessDeniedException
+      */
++    #[\ReturnTypeWillChange]
+     public function getChildren()
+     {
+         try {
+@@ -114,7 +116,7 @@ class RecursiveDirectoryIterator extends \RecursiveDirectoryIterator
+     /**
+      * Do nothing for non rewindable stream.
+      */
+-    public function rewind()
++    public function rewind(): void
+     {
+         if (false === $this->isRewindable()) {
+             return;
